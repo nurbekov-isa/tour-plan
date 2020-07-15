@@ -4,4 +4,4 @@
 
 ### Куратор Александр Ярославцев.
 
-### [id]: https://isradin93.github.io/tour-plan/
+#### https://isradin93.github.io/tour-plan/
