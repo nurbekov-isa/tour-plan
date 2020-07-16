@@ -1,6 +1,5 @@
 @mixin btn-reset {
-    padding: 0;
-    background-color: transparent;
+    background-color: $color-accent;
     border: none;
     cursor: pointer;
 }

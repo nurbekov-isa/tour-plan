@@ -10,11 +10,11 @@ html {
 
 body {
     font-family: 'Muli', sans-serif;
-    font-size: $main-font-size;
+    font-size: $main-fz;
     font-weight: 400;
     line-height: 1;
     color: $main-text-color;
-    background-color: #fff;
+    background-color: $main-color;
 }
 
 a {
@@ -33,7 +33,7 @@ ul {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 0 15px;
 }
