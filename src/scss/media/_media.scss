@@ -12,15 +12,15 @@
         &-top {
             padding: 30px 0;
         }
-        &__logo {
-            width: 132px;
-        }
         &__search {
             margin-left: auto;
         }
         &__nav {
             padding: 22px 0 23px;
         }
+    }
+    .logo {
+        width: 132px;
     }
     .search {
         width: 340px;
@@ -57,6 +57,32 @@
             height: 1px;
             background-color: $main-text-color;
         }
+    }
+    .hotel {
+        &-info {
+            &__text {
+                width: 100%;
+            }
+            &__wrapper {
+                justify-content: space-between;
+            }
+            &__offer {
+                order: -1;
+                margin-left: 0;
+            }
+            &__name {
+                margin-top: 10px;
+            }
+            &__rating {
+                display: none;
+            }
+        }
+        &-name {
+            flex-basis: 100%;
+        }
+    }
+    .star {
+        flex-basis: auto;
     }
 }
 

@@ -1,0 +1,66 @@
+.hotel {
+    padding: 24px 0 70px;
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__offer {
+            margin-left: 14px;
+            margin-top: 4px;
+        }
+        &__name {
+            margin: 4px 0 0 0;
+        }
+        &__desc {
+            margin: 5px 0;
+        }
+    }
+    &-name {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    &-desc {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+.star {
+    flex-basis: 100%;
+}
+
+.offer {
+    padding: 4px 9px;
+    font-size: 10px;
+    font-weight: 600;
+    color: $secondary-color;
+    background-color: $color-accent;
+    border-radius: 3px;
+}
+
+.rating {
+    max-width: 100px;
+    min-height: 45px;
+    padding: 9px 6px;
+    font-size: 8px;
+    color: $secondary-color;
+    text-align: center;
+    background-color: $color-accent;
+    border-radius: 4px;
+    &__user {
+        display: inline-block;
+        margin-bottom: 4px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    &__counter {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+}
