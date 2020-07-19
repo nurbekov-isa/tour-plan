@@ -638,10 +638,9 @@ ul {
 }
 
 .rating {
-  max-width: 100px;
+  max-width: 65px;
   min-height: 45px;
   padding: 9px 6px;
-  font-size: 8px;
   color: #fff;
   text-align: center;
   background-color: #ec1f46;
@@ -649,14 +648,13 @@ ul {
 }
 
 .rating__user {
-  display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-size: 8px;
   line-height: 10px;
 }
 
 .rating__counter {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 18px;
 }
