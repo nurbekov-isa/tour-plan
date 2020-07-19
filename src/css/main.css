@@ -1,8 +1,3 @@
-@charset "UTF-8";
-/*
-Base:
- The base/ folder holds what we might call the boilerplate code for the project. In there, you might find some typographic rules, and probably a stylesheet, defining some standard styles for commonly used HTML elements.
- */
 @font-face {
   font-family: 'Muli';
   font-weight: 300;
@@ -399,11 +394,6 @@ template {
   display: none;
 }
 
-/* 
-Abstracts:
-The abstracts/ folder gathers all Sass tools and helpers used across the project. Every global variable, function, mixin and placeholder should be put in here.
-The rule of thumb for this folder is that it should not output a single line of CSS when compiled on its own. These are nothing but Sass helpers.
-*/
 /* Text color */
 /* Font size */
 html {
@@ -448,10 +438,6 @@ ul {
   padding: 0 15px;
 }
 
-/* 
-Layout:
-The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.
-*/
 .header {
   background-color: #fff;
 }
@@ -460,23 +446,27 @@ The layout/ folder contains everything that takes part in laying out the site or
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 0;
 }
 
-.header__logo {
-  margin-right: 108px;
-}
-
 .header__search {
   margin-right: auto;
+  margin-left: 108px;
 }
 
 .header__nav {
-  padding: 30px 0;
+  padding: 31px 0;
   background-color: #0a223d;
+}
+
+.logo {
+  width: 177px;
 }
 
 .search {
@@ -537,15 +527,43 @@ The layout/ folder contains everything that takes part in laying out the site or
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 79px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__link {
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 18px;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .header-top {
+    padding: 30px 0;
+  }
+  .header__search {
+    margin-left: auto;
+  }
+  .header__nav {
+    padding: 22px 0 23px;
+  }
+  .nav__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
