@@ -12,6 +12,9 @@
         &-top {
             padding: 30px 0;
         }
+        &__logo {
+            width: 132px;
+        }
         &__search {
             margin-left: auto;
         }
@@ -19,8 +22,48 @@
             padding: 22px 0 23px;
         }
     }
+    .search {
+        width: 340px;
+    }
     .nav__link {
         font-size: $secondary-fz;
         line-height: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+        width: 92%;
+    }
+    .header {
+        &__search,
+        &__user,
+        &__nav {
+            display: none;
+        }
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 16px;
+        height: 11px;
+        padding: 0;
+        @include btn-reset;
+        &__link {
+            width: 16px;
+            height: 1px;
+            background-color: $main-text-color;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__logo {
+            width: 99px;
+        }
     }
 }

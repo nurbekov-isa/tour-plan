@@ -14,23 +14,29 @@
         <div class="container">
 
             <div class="header-top">
-                <a class="logo header__logo" href="#">
+                <a class="header__logo logo" href="#">
                     <img class="logo__img" src="icons/logo-horizontal.svg" alt="Logo: Best Tour Plan">
                 </a>
 
-                <form class="search header__search" action="#">
+                <form class="header__search search" action="#">
                     <input class="search__input" type="search" name="search-location" placeholder="Search Location">
                     <button class="search__button" type="submit" aria-label="find"></button>
                 </form>
 
-                <a class="user header__user" href="#">
+                <a class="header__user user" href="#">
                     <img class="user__avatar" src="images/user-avatar.jpg" alt="Nathan avatar">
                     <span class="user__name">Nathan</span>
                 </a>
+
+                <button class="header__burger burger" aria-label="Open menu">
+                    <span class="burger__link" aria-hidden="true"></span>
+                    <span class="burger__link" aria-hidden="true"></span>
+                    <span class="burger__link" aria-hidden="true"></span>
+                </button>
             </div>
         </div>
 
-        <nav class="nav header__nav">
+        <nav class="header__nav nav">
             <div class="container">
 
                 <ul class="nav__list">
@@ -59,12 +65,6 @@
             </div>
         </nav>
     </header>
-
-    <main class="main">
-        <section class="hotel">
-            <div class="container"></div>
-        </section>
-    </main>
 </body>
 
 </html>
