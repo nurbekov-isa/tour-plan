@@ -424,6 +424,8 @@ a {
 
 img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 ul {
@@ -709,6 +711,10 @@ ul {
 .slider-button_prev {
   left: 18px;
   background-image: url("../icons/arrow-prev.svg");
+}
+
+.swiper-slide__img {
+  width: 728px;
 }
 
 @media (max-width: 1200px) {
