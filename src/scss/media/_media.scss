@@ -54,6 +54,7 @@
     }
     .map {
         width: 340px;
+        height: 224px;
     }
 }
 
@@ -116,7 +117,7 @@
     .hotel {
         &-location {
             flex-direction: column;
-            min-height: 450px;
+            min-height: 470px;
         }
     }
     .booking {

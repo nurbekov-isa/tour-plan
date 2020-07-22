@@ -924,6 +924,7 @@ ul {
   }
   .map {
     width: 340px;
+    height: 224px;
   }
 }
 
@@ -997,7 +998,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
+    min-height: 470px;
   }
   .booking {
     width: 100%;
