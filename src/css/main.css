@@ -409,6 +409,7 @@ html {
 }
 
 body {
+  min-height: 4000vh;
   font-family: 'Muli', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -437,7 +438,6 @@ ul {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .header {
@@ -529,7 +529,7 @@ ul {
 }
 
 .nav {
-  background-color: #0a223d;
+  background-color: #0A223D;
 }
 
 .nav__list {
@@ -626,6 +626,28 @@ ul {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .star {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -715,6 +737,128 @@ ul {
 
 .swiper-slide__img {
   width: 728px;
+}
+
+.booking {
+  width: 350px;
+  min-height: 210px;
+  padding: 28px;
+  color: #fff;
+  background: #0A223D;
+  border-radius: 8px;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 9px;
+}
+
+.booking-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 9px;
+}
+
+.booking-price__start {
+  font-family: "Nunito";
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.booking-price__pricetag {
+  font-family: "Nunito";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+}
+
+.booking-price__per-room {
+  font-family: "Nunito";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking-person, .booking-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking-person__img, .booking-room__img {
+  margin-right: 10px;
+}
+
+.booking-room {
+  margin-bottom: 0;
+}
+
+.booking-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 17px;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.booking-contact__number {
+  margin-left: 8px;
+}
+
+.booking__btn {
+  width: 100%;
+  padding: 13px 0;
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ec1f46;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+}
+
+.map__location {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (max-width: 1200px) {

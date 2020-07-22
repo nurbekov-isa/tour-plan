@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    min-height: 4000vh;
     font-family: 'Muli', sans-serif;
     font-size: $main-fz;
     font-weight: 400;
@@ -36,5 +37,4 @@ ul {
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0 15px;
 }

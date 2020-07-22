@@ -29,6 +29,15 @@
         font-size: 12px;
         line-height: 15px;
     }
+    &-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .star {
@@ -109,4 +118,90 @@
 
 .swiper-slide__img {
     width: 728px;
+}
+
+.booking {
+    width: 350px;
+    min-height: 210px;
+    padding: 28px;
+    color: $secondary-color;
+    background: $color-dark;
+    border-radius: 8px;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 9px;
+    }
+    &-price {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9px;
+        &__start {
+            font-family: "Nunito";
+            font-size: 10px;
+            line-height: 14px;
+        }
+        &__pricetag {
+            font-family: "Nunito";
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 33px;
+        }
+        &__per-room {
+            font-family: "Nunito";
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    &-person,
+    &-room {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Nunito";
+        font-size: 12px;
+        line-height: 16px;
+        &__img {
+            margin-right: 10px;
+        }
+    }
+    &-room {
+        margin-bottom: 0;
+    }
+    &-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 17px;
+        font-family: "Nunito";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        &__number {
+            margin-left: 8px;
+        }
+    }
+    &__btn {
+        width: 100%;
+        padding: 13px 0;
+        font-family: "Nunito";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        color: $secondary-color;
+        @include btn-reset;
+        border-radius: 4px;
+        background-color: $color-accent;
+    }
+}
+
+.map {
+    width: 347px;
+    height: 213px;
+    &__location {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
 }

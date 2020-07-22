@@ -65,7 +65,7 @@
 }
 
 .nav {
-    background-color: #0a223d;
+    background-color: $color-dark;
     &__list {
         display: flex;
         justify-content: space-between;
