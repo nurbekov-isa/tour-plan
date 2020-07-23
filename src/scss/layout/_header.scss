@@ -22,6 +22,8 @@
     position: relative;
     width: 350px;
     height: 40px;
+    overflow: hidden;
+    border-radius: 6px;
     &__input {
         width: 100%;
         height: 100%;
@@ -30,7 +32,6 @@
         color: $main-text-color;
         background-color: $main-color;
         border: none;
-        border-radius: 6px;
     }
     &__button {
         position: absolute;
@@ -41,8 +42,6 @@
         height: 100%;
         @include btn-reset;
         background: $color-accent url("../icons/search.svg") center center no-repeat;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
     }
 }
 

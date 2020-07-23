@@ -475,6 +475,8 @@ ul {
   position: relative;
   width: 350px;
   height: 40px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 .search__input {
@@ -485,7 +487,6 @@ ul {
   color: #333;
   background-color: #f5fafe;
   border: none;
-  border-radius: 6px;
 }
 
 .search__button {
@@ -500,8 +501,6 @@ ul {
   border: none;
   cursor: pointer;
   background: #ec1f46 url("../icons/search.svg") center center no-repeat;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
 }
 
 .user {
@@ -866,6 +865,94 @@ ul {
   border: 0;
 }
 
+.newsletter {
+  position: relative;
+  min-height: 260px;
+  padding: 98px 0 87px;
+  background: #0A223D url("../images/newsletter-bg.jpg") center center/cover no-repeat;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 731px;
+  margin: auto;
+}
+
+.newsletter-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
+  max-width: 250px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+}
+
+.newsletter-title__strong {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 65px 0 23px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #bdbdbd;
+  background-color: #fff;
+  border: none;
+}
+
+.subscribe__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 65px;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #ec1f46;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -898,6 +985,9 @@ ul {
     font-size: 12px;
     line-height: 15px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -925,6 +1015,9 @@ ul {
   }
   .map {
     width: 360px;
+  }
+  .newsletter-container {
+    padding: 0 10px;
   }
 }
 
@@ -961,6 +1054,9 @@ ul {
     width: 16px;
     height: 1px;
     background-color: #333;
+  }
+  .hotel {
+    padding-bottom: 40px;
   }
   .hotel-info__text {
     width: 100%;
@@ -1006,6 +1102,23 @@ ul {
   .map {
     width: 100%;
   }
+  .newsletter-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 92%;
+    max-width: 576px;
+  }
+  .newsletter-title {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    margin-bottom: 37px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1017,6 +1130,20 @@ ul {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .newsletter {
+    padding: 76px 0 83px;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=main.css.map */

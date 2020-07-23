@@ -33,6 +33,7 @@
         line-height: 15px;
     }
     .hotel {
+        padding-bottom: 60px;
         &-grid {
             flex-direction: column;
         }
@@ -55,6 +56,11 @@
     }
     .map {
         width: 360px;
+    }
+    .newsletter {
+        &-container {
+            padding: 0 10px;
+        }
     }
 }
 
@@ -86,6 +92,7 @@
         }
     }
     .hotel {
+        padding-bottom: 40px;
         &-info {
             &__text {
                 width: 100%;
@@ -126,6 +133,18 @@
     .map {
         width: 100%;
     }
+    .newsletter {
+        &-container {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 92%;
+            max-width: 576px;
+        }
+        &-title {
+            flex: 0;
+            margin-bottom: 37px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -141,5 +160,19 @@
         &__slider {
             margin-bottom: 20px;
         }
+    }
+    .newsletter {
+        padding: 76px 0 83px;
+        &-title {
+            font-size: 20px;
+            line-height: 25px;
+            &__strong {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+    }
+    .subscribe {
+        width: 280px;
     }
 }
