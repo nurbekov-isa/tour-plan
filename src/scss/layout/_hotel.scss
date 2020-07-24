@@ -38,6 +38,42 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    &-slider {
+        width: 718px;
+        height: 450px;
+        margin: 0;
+        &__button {
+            @include slider-btn;
+            @include btn-reset;
+            &_next {
+                right: 18px;
+                background-image: url("../icons/arrow-next.svg");
+            }
+            &_prev {
+                left: 18px;
+                background-image: url("../icons/arrow-prev.svg");
+            }
+        }
+        &__item {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+            }
+        }
+    }
 }
 
 .star {
@@ -73,50 +109,48 @@
     }
 }
 
-.swiper-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-    }
-}
-
-.slider {
-    width: 718px;
-    height: 450px;
-    &-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 99;
-        width: 30px;
-        height: 30px;
-        background-size: 10px;
-        background-position: center;
-        background-repeat: no-repeat;
-        @include btn-reset;
-        &_next {
-            right: 18px;
-            background-image: url("../icons/arrow-next.svg");
-        }
-        &_prev {
-            left: 18px;
-            background-image: url("../icons/arrow-prev.svg");
-        }
-    }
-}
-
+// .swiper-container {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 8px;
+//     &::after {
+//         position: absolute;
+//         content: "";
+//         top: 0;
+//         left: 0;
+//         bottom: 0;
+//         right: 0;
+//         z-index: 10;
+//         width: 100%;
+//         height: 100%;
+//         background-image: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+//     }
+// }
+// .slider {
+//     width: 718px;
+//     height: 450px;
+//     &-button {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         z-index: 99;
+//         width: 30px;
+//         height: 30px;
+//         background-size: 10px;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         @include btn-reset;
+//         &_next {
+//             right: 18px;
+//             background-image: url("../icons/arrow-next.svg");
+//         }
+//         &_prev {
+//             left: 18px;
+//             background-image: url("../icons/arrow-prev.svg");
+//         }
+//     }
+// }
 .swiper-slide__img {
     width: 728px;
     height: 100%;
@@ -138,7 +172,6 @@
     &-price {
         display: flex;
         flex-direction: column;
-        margin-bottom: 9px;
         &__start {
             font-family: "Nunito";
             font-size: 10px;

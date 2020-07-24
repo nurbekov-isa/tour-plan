@@ -3,3 +3,15 @@
     border: none;
     cursor: pointer;
 }
+
+@mixin slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

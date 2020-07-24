@@ -2,8 +2,10 @@
     .container {
         max-width: 960px;
     }
-    .slider {
-        width: 570px;
+    .hotel {
+        &-slider {
+            width: 570px;
+        }
     }
 }
 
@@ -43,9 +45,9 @@
         &-location {
             flex-direction: row;
         }
-    }
-    .slider {
-        width: 100%;
+        &-slider {
+            width: 100%;
+        }
     }
     .swiper-slide__img {
         width: 100%;
@@ -114,18 +116,16 @@
         &-name {
             flex-basis: 100%;
         }
-    }
-    .star {
-        flex-basis: auto;
-    }
-    .slider {
-        height: 350px;
-    }
-    .hotel {
+        &-slider {
+            height: 350px;
+        }
         &-location {
             flex-direction: column;
             min-height: 450px;
         }
+    }
+    .star {
+        flex-basis: auto;
     }
     .booking {
         width: 100%;
