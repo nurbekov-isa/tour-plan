@@ -1082,12 +1082,99 @@ ul {
   background-image: url("../icons/arrow-left-secondary.svg");
 }
 
+.activities {
+  padding: 60px 0 98px;
+}
+
+.activities__title {
+  margin: 0 0 57px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #000;
+}
+
+.activities-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  padding: 24px 26px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+.card__title {
+  margin: auto 0 18px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.card__btn {
+  padding: 7px 22px;
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #ec1f46;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
   .hotel-slider {
     width: 570px;
+  }
+  .card {
+    width: 225px;
+    height: 225px;
   }
 }
 
@@ -1167,6 +1254,16 @@ ul {
   }
   .reviews-slider__desc {
     max-width: 455px;
+  }
+  .activities-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities-list__item {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 360px;
   }
 }
 
@@ -1302,6 +1399,12 @@ ul {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .card {
+    width: 48.7%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1326,6 +1429,23 @@ ul {
     line-height: 38px;
   }
   .subscribe {
+    width: 280px;
+  }
+  .activities {
+    padding: 40px 0 60px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
     width: 280px;
   }
 }

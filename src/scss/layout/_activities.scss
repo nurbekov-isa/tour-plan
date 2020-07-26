@@ -1,0 +1,63 @@
+.activities {
+    padding: 60px 0 98px;
+    &__title {
+        margin: 0 0 57px 0;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 30px;
+        color: #000;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 255px;
+    height: 255px;
+    padding: 24px 26px;
+    overflow: hidden;
+    border-radius: 6px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+        z-index: -1;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+    }
+    &__title {
+        margin: auto 0 18px 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: $secondary-color;
+    }
+    &__btn {
+        padding: 7px 22px;
+        font-family: "Nunito";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        color: $secondary-color;
+        @include btn-reset;
+        background-color: $color-accent;
+        border-radius: 4px;
+    }
+}

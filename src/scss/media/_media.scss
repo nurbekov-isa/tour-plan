@@ -7,6 +7,10 @@
             width: 570px;
         }
     }
+    .card {
+        width: 225px;
+        height: 225px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -86,6 +90,17 @@
                 max-width: 455px;
             }
         }
+    }
+    .activities {
+        &-list {
+            flex-wrap: wrap;
+            &__item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .card {
+        width: 360px;
     }
 }
 
@@ -202,6 +217,12 @@
             }
         }
     }
+    .activities {
+        padding-bottom: 70px;
+    }
+    .card {
+        width: 48.7%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -230,6 +251,23 @@
         }
     }
     .subscribe {
+        width: 280px;
+    }
+    .activities {
+        padding: 40px 0 60px;
+        &__title {
+            margin-bottom: 36px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
         width: 280px;
     }
 }
