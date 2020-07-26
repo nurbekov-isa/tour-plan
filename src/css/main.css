@@ -1308,6 +1308,9 @@ ul {
   .header__logo {
     width: 99px;
   }
+  .hotel-slider {
+    height: 250px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }

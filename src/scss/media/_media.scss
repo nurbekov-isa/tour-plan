@@ -211,6 +211,9 @@
         }
     }
     .hotel {
+        &-slider {
+            height: 250px;
+        }
         &__slider {
             margin-bottom: 20px;
         }
