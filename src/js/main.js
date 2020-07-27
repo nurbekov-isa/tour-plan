@@ -4,7 +4,6 @@
 var hotelSlider = new Swiper('.hotelSlider', {
     // Optional parameters
     loop: true,
-    autoHeight: true,
 
     // Keyboard Control Parameters
     keyboard: {
@@ -24,6 +23,7 @@ var hotelSlider = new Swiper('.hotelSlider', {
 var reviewsSlider = new Swiper('.reviewsSlider', {
     // Optional parameters
     loop: true,
+    autoHeight: true,
 
     // Keyboard Control Parameters
     keyboard: {
