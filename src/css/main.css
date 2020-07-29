@@ -1728,6 +1728,9 @@ ul {
     display: block;
     margin-top: 20px;
   }
+  .footer-contact__desc {
+    line-height: 23px;
+  }
   .footer-form {
     position: relative;
   }
