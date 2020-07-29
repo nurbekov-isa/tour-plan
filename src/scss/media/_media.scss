@@ -11,6 +11,11 @@
         width: 225px;
         height: 225px;
     }
+    .footer {
+        &-form__input {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -101,6 +106,31 @@
     }
     .card {
         width: 360px;
+    }
+    .footer {
+        &-wrapper {
+            grid-template-areas: "footer-logo footer-network ." "footer-categories footer-info footer-legal-info" "footer-contact footer-contact ." "footer-form-wrapper footer-form-wrapper footer-form-wrapper" "footer-policy footer-policy footer-payment";
+            grid-template-columns: repeat(3, minmax(max-content, 1fr));
+            grid-auto-rows: max-content;
+            column-gap: 25px;
+            row-gap: 55px;
+        }
+        &-logo {
+            width: 104px;
+            margin: 0;
+        }
+        &__social-network {
+            margin: 0;
+        }
+        &-network {
+            align-self: center;
+        }
+        &-policy {
+            margin-left: 0;
+        }
+        &-form__input {
+            width: 255px;
+        }
     }
 }
 
@@ -223,6 +253,47 @@
     .card {
         width: 48.7%;
     }
+    .footer {
+        &-wrapper {
+            column-gap: 40px;
+        }
+    }
+    .footer {
+        padding: 73px 0 33px;
+        &-wrapper {
+            grid-template-areas: "footer-logo" "footer-network" "footer-legal-info" "footer-info" "footer-categories" "footer-contact" "footer-form-wrapper" "footer-policy" "footer-payment";
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+        &__title {
+            display: inline-block;
+        }
+        &-network {
+            display: block;
+        }
+        &-social {
+            display: block;
+            margin-top: 20px;
+        }
+        &-form {
+            position: relative;
+            &__input {
+                width: 100%;
+            }
+            &__textarea {
+                margin-bottom: 45px;
+            }
+            &__info {
+                position: absolute;
+                left: 0;
+                top: 268px;
+            }
+        }
+        &-payment {
+            // justify-content: start;
+            margin: 0 auto 0 0;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -269,5 +340,8 @@
 @media (max-width: 320px) {
     .card {
         width: 280px;
+    }
+    .footer {
+        padding: 70px 0 20px;
     }
 }
