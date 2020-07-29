@@ -19,7 +19,7 @@ var hotelSlider = new Swiper('.hotelSlider', {
 });
 
 
-/* Hotel Slider */
+/* Review Slider */
 var reviewsSlider = new Swiper('.reviewsSlider', {
     // Optional parameters
     loop: true,

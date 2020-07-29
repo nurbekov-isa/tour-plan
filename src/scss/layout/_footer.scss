@@ -1,0 +1,164 @@
+.footer {
+    padding: 108px 0 46px;
+    color: $secondary-text-color;
+    background-color: $color-dark;
+    &-wrapper {
+        display: grid;
+        grid-template-areas: "footer-logo footer-categories footer-info footer-legal-info" "footer-logo footer-categories footer-network footer-legal-info" "footer-contact footer-contact footer-form-wrapper footer-form-wrapper" ". footer-policy footer-policy footer-payment";
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+        column-gap: 50px;
+        grid-auto-rows: minmax(140px, min-content);
+        align-items: start;
+        min-height: 375px;
+    }
+    &-logo {
+        grid-area: footer-logo;
+        width: 166px;
+        margin-top: 30px;
+    }
+    &-categories {
+        grid-area: footer-categories;
+    }
+    &-title {
+        max-width: 250px;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 23px;
+        color: $secondary-color;
+    }
+    &__title {
+        margin: 0 0 16px 0;
+    }
+    &-list__item {
+        line-height: 160%;
+    }
+    &-info {
+        grid-area: footer-info;
+    }
+    &-legal-info {
+        grid-area: footer-legal-info;
+    }
+    &-network {
+        grid-area: footer-network;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 295px;
+        &__title {
+            margin: 0 43px 0 0;
+        }
+    }
+    &__social-network {
+        margin-top: 24px;
+    }
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        min-width: 85px;
+    }
+    &-contact {
+        grid-area: footer-contact;
+        &__title {
+            margin: 0 0 30px 0;
+        }
+        &__desc {
+            margin: 0 0 22px 0;
+        }
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            min-width: 490px;
+            line-height: 160%;
+            &_mb-2:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__img-wrapper {
+            min-width: 40px;
+        }
+    }
+    &-form-wrapper {
+        grid-area: footer-form-wrapper;
+        width: 539px;
+        &__title {
+            margin: 0 0 34px 0;
+        }
+    }
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &__input {
+            width: 255px;
+            height: 50px;
+            margin-bottom: 15px;
+            padding-left: 23px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $secondary-text-color;
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 4px;
+        }
+        &__textarea {
+            flex: 0 0 100%;
+            height: 123px;
+            margin-bottom: 22px;
+            padding: 18px 10px 10px 23px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $secondary-text-color;
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 4px;
+        }
+        &__btn {
+            padding: 18px 55px;
+            font-size: 12px;
+            font-weight: 700;
+            color: $secondary-color;
+            @include btn-reset;
+            background-color: $color-accent;
+            border-radius: 4px;
+        }
+        &__info {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            color: #e0e0e0;
+        }
+    }
+    &-policy {
+        grid-area: footer-policy;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: flex-end;
+        min-width: 283px;
+        margin: 0 auto;
+        &__link {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            color: $secondary-color;
+        }
+    }
+    &-payment {
+        grid-area: footer-payment;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: flex-end;
+        min-width: 136px;
+        margin-left: auto;
+        &__link {
+            align-self: center;
+        }
+        &__img {
+            width: 20px;
+            height: 12px;
+        }
+    }
+}
