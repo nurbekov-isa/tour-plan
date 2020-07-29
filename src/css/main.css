@@ -1723,10 +1723,17 @@ ul {
   }
   .footer-network {
     display: block;
+    min-width: 167px;
+  }
+  .footer-network__title {
+    margin-right: 0;
   }
   .footer-social {
     display: block;
     margin-top: 20px;
+  }
+  .footer-social__link:not(:last-child) {
+    margin-right: 10px;
   }
   .footer-contact__desc {
     line-height: 23px;

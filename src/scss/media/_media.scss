@@ -270,10 +270,17 @@
         }
         &-network {
             display: block;
+            min-width: 167px;
+            &__title {
+                margin-right: 0;
+            }
         }
         &-social {
             display: block;
             margin-top: 20px;
+            &__link:not(:last-child) {
+                margin-right: 10px;
+            }
         }
         &-contact__desc {
             line-height: 23px;
@@ -293,7 +300,6 @@
             }
         }
         &-payment {
-            // justify-content: start;
             margin: 0 auto 0 0;
         }
     }
