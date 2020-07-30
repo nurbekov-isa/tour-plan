@@ -37,3 +37,10 @@ var reviewsSlider = new Swiper('.reviewsSlider', {
         prevEl: '.reviewsSliderBtnPrev',
     },
 });
+
+
+/* Nav menu button */
+var menuButton = document.querySelector('.menuBtn');
+menuButton.addEventListener('click', function() {
+    document.querySelector('.navMenu').classList.toggle('nav_mobile_visible');
+});

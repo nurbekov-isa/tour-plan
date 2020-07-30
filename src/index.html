@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header_mobile_fixed">
         <div class="container">
 
             <div class="header-top">
@@ -19,17 +19,17 @@
                     <img class="logo__img" src="icons/logo-horizontal.svg" alt="Logo: Best Tour Plan">
                 </a>
 
-                <form class="search header__search" action="#">
+                <form class="search header__search search_mobile_hidden" action="#">
                     <input class="search__input" type="search" name="search-location" placeholder="Search Location">
                     <button class="search__button" type="submit" aria-label="find"></button>
                 </form>
 
-                <a class="user header__user" href="#">
+                <a class="user header__user user_mobile_hidden" href="#">
                     <img class="user__avatar" src="images/user-avatar.jpg" alt="Nathan avatar">
                     <span class="user__name">Nathan</span>
                 </a>
 
-                <button class="burger header__burger" aria-label="Open menu">
+                <button class="burger header__burger menuBtn" aria-label="Open menu">
                     <span class="burger__link" aria-hidden="true"></span>
                     <span class="burger__link" aria-hidden="true"></span>
                     <span class="burger__link" aria-hidden="true"></span>
@@ -39,10 +39,22 @@
 
         </div>
 
-        <nav class="nav header__nav">
+        <nav class="nav header__nav navMenu">
             <div class="container">
 
                 <ul class="nav__list">
+                    <li class="nav__item nav__item_mobile_visible">
+                        <a class="user header__user user_mobile_visible" href="#">
+                            <img class="user__avatar" src="images/user-avatar.jpg" alt="Nathan avatar">
+                            <span class="user__name  user__name_light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item_mobile_visible">
+                        <form class="search header__search search_mobile_visible" action="#">
+                            <input class="search__input" type="search" name="search-location" placeholder="Search Location">
+                            <button class="search__button" type="submit" aria-label="find"></button>
+                        </form>
+                    </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">All Deals</a>
                     </li>

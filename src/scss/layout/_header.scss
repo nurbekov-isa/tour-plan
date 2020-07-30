@@ -71,10 +71,26 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__item {
+        &_mobile {
+            &_visible {
+                display: none;
+            }
+        }
+    }
     &__link {
         font-weight: 700;
         text-transform: uppercase;
         line-height: 18px;
         color: $secondary-color;
+    }
+}
+
+.user,
+.search {
+    &_mobile {
+        &_visible {
+            display: none;
+        }
     }
 }
