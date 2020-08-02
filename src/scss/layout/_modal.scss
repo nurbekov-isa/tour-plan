@@ -1,0 +1,74 @@
+.modal {
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: rgba(0, 143, 223, 0.39);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s;
+        &_visible {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &__dialog {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 101;
+        transform: translate(-50%, -50%);
+        max-width: 478px;
+        padding: 33px 88px;
+        color: $secondary-color;
+        background: $color-dark;
+        border-radius: 8px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s;
+        &_visible {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 17px;
+        right: 18px;
+    }
+    &-title {
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 23px;
+        color: #fff;
+    }
+    &__title {
+        margin: 0 0 15px 0;
+    }
+    &-form {
+        @include form;
+        &__input {
+            width: 302px;
+            @include input;
+        }
+        &__textarea {
+            margin-bottom: 15px;
+            @include textarea;
+        }
+        &__btn {
+            @include btn-reset;
+            @include footer-btn;
+        }
+        &__info {
+            margin-left: auto;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            color: #e0e0e0;
+        }
+    }
+}

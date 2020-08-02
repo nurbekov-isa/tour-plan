@@ -15,3 +15,44 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@mixin form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 23px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $secondary-text-color;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 4px;
+}
+
+@mixin textarea {
+    flex: 0 0 100%;
+    width: 100%;
+    min-height: 123px;
+    padding: 18px 10px 10px 23px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $secondary-text-color;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 4px;
+}
+
+@mixin footer-btn {
+    padding: 18px 66px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $secondary-color;
+    background-color: $color-accent;
+    border-radius: 4px;
+}

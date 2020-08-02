@@ -86,42 +86,18 @@
         }
     }
     &-form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        @include form;
         &__input {
             width: 255px;
-            height: 50px;
-            margin-bottom: 15px;
-            padding-left: 23px;
-            font-size: 12px;
-            font-weight: 400;
-            color: $secondary-text-color;
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 4px;
+            @include input;
         }
         &__textarea {
-            flex: 0 0 100%;
-            height: 123px;
             margin-bottom: 22px;
-            padding: 18px 10px 10px 23px;
-            font-size: 12px;
-            font-weight: 400;
-            color: $secondary-text-color;
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 4px;
+            @include textarea;
         }
         &__btn {
-            padding: 18px 55px;
-            font-size: 12px;
-            font-weight: 700;
-            color: $secondary-color;
             @include btn-reset;
-            background-color: $color-accent;
-            border-radius: 4px;
+            @include footer-btn;
         }
         &__info {
             font-size: 12px;

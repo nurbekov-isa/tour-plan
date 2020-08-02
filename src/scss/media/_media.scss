@@ -403,6 +403,34 @@
     .card {
         width: 100%;
     }
+    .modal {
+        &__dialog {
+            width: 90%;
+            padding: 33px 40px;
+        }
+        &-form {
+            &__input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .modal {
+        &__dialog {
+            padding: 33px 30px;
+        }
+        &-form {
+            &__btn {
+                width: 90%;
+                margin: 0 auto 10px auto;
+            }
+            &__info {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
