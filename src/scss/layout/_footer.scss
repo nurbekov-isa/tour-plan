@@ -87,8 +87,12 @@
     }
     &-form {
         @include form;
-        &__input {
+        &__input-group {
             width: 255px;
+            margin-bottom: 15px;
+        }
+        &__input {
+            width: 100%;
             @include input;
         }
         &__textarea {

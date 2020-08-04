@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    min-height: 1000vh;
     font-family: 'Muli', sans-serif;
     font-size: $main-fz;
     font-weight: 400;
@@ -38,4 +37,9 @@ ul {
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.invalid {
+    color: $color-accent;
+    border-bottom: 1px solid $color-accent;
 }

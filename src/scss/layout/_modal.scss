@@ -54,9 +54,12 @@
         &__input {
             width: 302px;
             @include input;
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
         }
         &__textarea {
-            margin-bottom: 15px;
+            margin: 15px 0 15px;
             @include textarea;
         }
         &__btn {
