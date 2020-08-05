@@ -71,6 +71,17 @@ $(document).ready(function() {
         modalDialog.removeClass('modal__dialog_visible');
     }
 
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+
+            var modalOverlay = $('.js-modalOverlay');
+            var modalDialog = $('.js-modalDialog');
+
+            modalOverlay.removeClass('modal__overlay_visible');
+            modalDialog.removeClass('modal__dialog_visible');
+        }
+    });
+
     /* Form validation */
     $('.js-form').each(function() {
         $(this).validate({
@@ -94,5 +105,7 @@ $(document).ready(function() {
     $('.js-phone').each(function() {
         $(this).mask('+7 (000) 000-00-00');
     });
+
+    AOS.init();
 
 });

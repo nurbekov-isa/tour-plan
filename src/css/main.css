@@ -504,6 +504,12 @@ ul {
   border: none;
   cursor: pointer;
   background: #ec1f46 url("../icons/search.svg") center center no-repeat;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+.search__button:hover {
+  background-color: rgba(28, 26, 167, 0.699);
 }
 
 .user {
@@ -525,6 +531,19 @@ ul {
 
 .user__name {
   margin-left: 18px;
+  -webkit-transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: text-decoration, color .4s ease-in-out;
+  transition: text-decoration, color .4s ease-in-out, -webkit-text-decoration;
+}
+
+.user__name:hover {
+  text-decoration: underline;
+  color: rgba(6, 177, 177, 0.979);
+  -webkit-transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: text-decoration, color .4s ease-in-out;
+  transition: text-decoration, color .4s ease-in-out, -webkit-text-decoration;
 }
 
 .burger {
@@ -556,6 +575,19 @@ ul {
   text-transform: uppercase;
   line-height: 18px;
   color: #fff;
+  -webkit-transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: text-decoration, color .4s ease-in-out;
+  transition: text-decoration, color .4s ease-in-out, -webkit-text-decoration;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  color: rgba(178, 180, 32, 0.979);
+  -webkit-transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: color .4s ease-in-out, -webkit-text-decoration;
+  transition: text-decoration, color .4s ease-in-out;
+  transition: text-decoration, color .4s ease-in-out, -webkit-text-decoration;
 }
 
 .user_mobile_visible,
@@ -863,6 +895,12 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   background-color: #ec1f46;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+.booking__btn:hover {
+  background-color: rgba(28, 26, 167, 0.699);
 }
 
 .map {
@@ -964,6 +1002,12 @@ ul {
   border: none;
   cursor: pointer;
   background-color: #ec1f46;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+.subscribe__button:hover {
+  background-color: rgba(28, 26, 167, 0.699);
 }
 
 .reviews {
@@ -1175,6 +1219,12 @@ ul {
   cursor: pointer;
   background-color: #ec1f46;
   border-radius: 4px;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+.card__btn:hover {
+  background-color: rgba(28, 26, 167, 0.699);
 }
 
 .footer {
@@ -1282,6 +1332,19 @@ ul {
   min-width: 85px;
 }
 
+.footer-social__link {
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+.footer-social__link:hover {
+  background-color: rgba(47, 182, 6, 0.692);
+}
+
+.footer-social__img {
+  border-radius: 50%;
+}
+
 .footer-contact {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -1385,6 +1448,12 @@ ul {
   color: #fff;
   background-color: #ec1f46;
   border-radius: 4px;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+.footer-form__btn:hover {
+  background-color: rgba(28, 26, 167, 0.699);
 }
 
 .footer-form__info {

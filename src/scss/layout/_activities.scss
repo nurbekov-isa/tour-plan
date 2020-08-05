@@ -59,5 +59,9 @@
         @include btn-reset;
         background-color: $color-accent;
         border-radius: 4px;
+        transition: background-color .4s ease-in-out;
+        &:hover {
+            @include hover-color;
+        }
     }
 }

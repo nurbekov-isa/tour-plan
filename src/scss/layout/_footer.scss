@@ -56,6 +56,15 @@
         justify-content: space-between;
         align-items: start;
         min-width: 85px;
+        &__link {
+            transition: background-color .4s ease-in-out;
+            &:hover {
+                background-color: rgba(47, 182, 6, 0.692);
+            }
+        }
+        &__img {
+            border-radius: 50%;
+        }
     }
     &-contact {
         grid-area: footer-contact;
@@ -102,6 +111,10 @@
         &__btn {
             @include btn-reset;
             @include footer-btn;
+            transition: background-color .4s ease-in-out;
+            &:hover {
+                @include hover-color;
+            }
         }
         &__info {
             font-size: 12px;

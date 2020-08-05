@@ -4,6 +4,10 @@
     cursor: pointer;
 }
 
+@mixin hover-color {
+    background-color: rgba(28, 26, 167, 0.699);
+}
+
 @mixin slider-btn {
     position: absolute;
     top: 50%;

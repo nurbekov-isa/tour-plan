@@ -43,6 +43,10 @@
         height: 100%;
         @include btn-reset;
         background: $color-accent url("../icons/search.svg") center center no-repeat;
+        transition: background-color .4s ease-in-out;
+        &:hover {
+            @include hover-color;
+        }
     }
 }
 
@@ -57,6 +61,12 @@
     }
     &__name {
         margin-left: 18px;
+        transition: text-decoration, color .4s ease-in-out;
+        &:hover {
+            text-decoration: underline;
+            color: rgba(6, 177, 177, 0.979);
+            transition: text-decoration, color .4s ease-in-out;
+        }
     }
 }
 
@@ -83,6 +93,12 @@
         text-transform: uppercase;
         line-height: 18px;
         color: $secondary-color;
+        transition: text-decoration, color .4s ease-in-out;
+        &:hover {
+            text-decoration: underline;
+            color: rgba(178, 180, 32, 0.979);
+            transition: text-decoration, color .4s ease-in-out;
+        }
     }
 }
 
