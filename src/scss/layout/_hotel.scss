@@ -173,6 +173,12 @@
         line-height: 25px;
         &__number {
             margin-left: 8px;
+            transition: text-shadow, text-decoration, transform .4s ease-in-out;
+            &:hover {
+                text-shadow: 1px 1px 2px rgba(12, 94, 56, 0.521);
+                text-decoration: underline;
+                color: rgba(46, 231, 29, 0.746);
+            }
         }
     }
     &__btn {

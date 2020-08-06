@@ -86,6 +86,18 @@
         &__img-wrapper {
             min-width: 40px;
         }
+        &__address {
+            margin: 0;
+        }
+        &__address-link {
+            display: inline-block;
+            transition: text-shadow, text-decoration, transform .4s ease-in-out;
+            &:hover {
+                text-shadow: 1px 1px 2px rgba(12, 94, 56, 0.521);
+                text-decoration: underline;
+                color: rgba(46, 231, 29, 0.746);
+            }
+        }
     }
     &-form-wrapper {
         grid-area: footer-form-wrapper;
@@ -136,6 +148,10 @@
             font-weight: 400;
             line-height: 15px;
             color: $secondary-color;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: rgba(5, 158, 163, 0.897);
+            }
         }
     }
     &-payment {
