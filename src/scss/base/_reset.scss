@@ -40,5 +40,7 @@ ul {
 }
 
 .invalid {
+    position: relative;
+    margin-bottom: 8px;
     color: $color-accent;
 }

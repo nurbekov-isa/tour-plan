@@ -18,8 +18,8 @@
         <div class="container">
 
             <div class="header-top">
-                <a class="logo header__logo " href="#" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <img class="logo__img" src="icons/logo-horizontal.svg" alt="Logo: Best Tour Plan">
+                <a class="logo header__logo " href="index.html">
+                    <img class="logo__img lazyload" src="#" data-src="icons/logo-horizontal.svg" alt="Logo: Best Tour Plan">
                 </a>
 
                 <form class="search header__search search_mobile_hidden" action="#" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -28,7 +28,7 @@
                 </form>
 
                 <a class="user header__user user_mobile_hidden" href="#" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <img class="user__avatar" src="images/user-avatar.jpg" alt="Nathan avatar">
+                    <img class="user__avatar lazyload" src="#" data-src="images/user-avatar.jpg" alt="Nathan avatar">
                     <span class="user__name">Nathan</span>
                 </a>
 
@@ -118,11 +118,11 @@
 
                         <div class="hotel-info__wrapper">
                             <div class="star hotel-info__star">
-                                <img class="star__img" src="icons/star.svg" alt="Hotel rating">
-                                <img class="star__img" src="icons/star.svg" alt="">
-                                <img class="star__img" src="icons/star.svg" alt="">
-                                <img class="star__img" src="icons/star.svg" alt="">
-                                <img class="star__img" src="icons/star.svg" alt="">
+                                <img class="star__img lazyload" src="#" data-src="icons/star.svg" alt="Hotel rating">
+                                <img class="star__img lazyload" src="#" data-src="icons/star.svg" alt="">
+                                <img class="star__img lazyload" src="#" data-src="icons/star.svg" alt="">
+                                <img class="star__img lazyload" src="#" data-src="icons/star.svg" alt="">
+                                <img class="star__img lazyload" src="#" data-src="icons/star.svg" alt="">
                             </div>
 
                             <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
@@ -146,27 +146,27 @@
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img" src="images/slide.jpg" alt="slide">
+                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide.jpg" alt="slide">
                             </div>
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img" src="images/slide-2.jpg" alt="slide">
+                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-2.jpg" alt="slide">
                             </div>
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img" src="images/slide-3.jpg" alt="slide">
+                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-3.jpg" alt="slide">
                             </div>
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img" src="images/slide-4.jpg" alt="slide">
+                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-4.jpg" alt="slide">
                             </div>
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img" src="images/slide-5.jpg" alt="slide">
+                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-5.jpg" alt="slide">
                             </div>
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img" src="images/slide-6.jpg" alt="slide">
+                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-6.jpg" alt="slide">
                             </div>
                         </div>
 
@@ -186,12 +186,12 @@
 
                                 <div class="booking__process">
                                     <div class="booking-person">
-                                        <img class="booking-person__img" src="icons/room-user.svg" alt="room owner">
+                                        <img class="booking-person__img lazyload" src="#" data-src="icons/room-user.svg" alt="room owner">
                                         <span class="booking-person__guest">2 x Guests</span>
                                     </div>
 
                                     <div class="booking-room">
-                                        <img class="booking-room__img" src="icons/room.svg" alt="room">
+                                        <img class="booking-room__img lazyload" src="#" data-src="icons/room.svg" alt="room">
                                         <span class="booking-room__room">1 x Room</span>
                                     </div>
                                 </div>
@@ -200,7 +200,7 @@
                             <div class="booking-contact">
                                 <span class="booking-contact__text">Quick Booking</span>
                                 <a class="booking-contact__phone" href="tel:+12100">
-                                    <img class="booking-contact__img" src="icons/phone-call.svg" alt="phone">
+                                    <img class="booking-contact__img lazyload" src="#" data-src="icons/phone-call.svg" alt="phone">
                                     <span class="booking-contact__number">12100</span>
                                 </a>
                             </div>
@@ -208,11 +208,8 @@
                             <button class="booking__btn" data-toggle="modal">View Other Options</button>
                         </div>
                         <!-- /.booking -->
-                        <div class="map">
-                            <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.004583068293!2d79.80142719424924!3d7.574477710610206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sen!2sde!4v1595407274346!5m2!1sen!2sde"
-                                allowfullscreen="" aria-hidden="false" tabindex="0">
-                            </iframe>
-                        </div>
+
+                        <div class="map-wrap"></div>
                     </div>
                 </div>
                 <!-- /.hotel-grid -->
@@ -228,7 +225,7 @@
 
                 <form class="subscribe subscribe__search js-form" action="send.php" method="POST">
                     <input class="subscribe__input" type="email" name="email" placeholder="Your email address" required>
-                    <button class="subscribe__button" type="submit" aria-label="send">Send</button>
+                    <button class="subscribe__button" type="submit_1" aria-label="send">Send</button>
                 </form>
             </div>
         </section>
@@ -243,7 +240,7 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar" src="images/reviews-avatar.jpg" alt="Photo Megan Fox">
+                                    <img class="reviews-slider__avatar lazyload" src="#" data-src="images/reviews-avatar.jpg" alt="Photo Megan Fox">
                                     <h3 class="reviews-slider__username">Megan Fox</h3>
 
                                     <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
@@ -271,7 +268,7 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar" src="images/reviews-avatar-2.jpg" alt="Photo Megan Fox">
+                                    <img class="reviews-slider__avatar lazyload" src="#" data-src="images/reviews-avatar-2.jpg" alt="Photo Megan Fox">
                                     <h3 class="reviews-slider__username">Robert De Niro</h3>
 
                                     <span class="reviews-slider__date">Stayed 11 May, 2017</span>
@@ -312,25 +309,25 @@
 
                 <ul class="activities-list">
                     <li class="card activities-list__item" data-aos="flip-down" data-aos-easing="ease-in-sine">
-                        <img class="card__img" src="images/activity-1.jpg" alt="The curious corner of chamarel">
+                        <img class="card__img lazyload" src="#" data-src="images/activity-1.jpg" alt="The curious corner of chamarel">
                         <h3 class=" card__title">The curious corner of chamarel</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
 
                     <li class="card activities-list__item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <img class="card__img" src="images/activity-2.jpg " alt="Gymkhana club golf course ">
+                        <img class="card__img lazyload" src="#" data-src="images/activity-2.jpg " alt="Gymkhana club golf course ">
                         <h3 class="card__title">Gymkhana club golf course</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
 
                     <li class="card activities-list__item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <img class="card__img" src="images/activity-3.jpg " alt="Tamarind falls hiking trip - full day ">
+                        <img class="card__img lazyload" src="#" data-src="images/activity-3.jpg " alt="Tamarind falls hiking trip - full day ">
                         <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
 
                     <li class="card activities-list__item" data-aos="flip-down" data-aos-easing="ease-in-sine">
-                        <img class="card__img" src="images/activity-4.jpg " alt="The blue marine discovery quest ">
+                        <img class="card__img lazyload" src="#" data-src="images/activity-4.jpg " alt="The blue marine discovery quest ">
                         <h3 class="card__title">The blue marine discovery quest</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
@@ -344,8 +341,8 @@
         <div class="container">
 
             <div class="footer-wrapper">
-                <a class="footer-logo footer__logo" href="#" data-aos="flip-down" data-aos-duration="6000" data-aos-easing="ease-in-sine">
-                    <img class="footer__img" src="icons/logo-vertical.svg" alt="Logo: Best Tour Plan">
+                <a class="footer-logo footer__logo" href="index.html" data-aos="flip-down" data-aos-duration="6000" data-aos-easing="ease-in-sine">
+                    <img class="footer__img lazyload" src="#" data-src="icons/logo-vertical.svg" alt="Logo: Best Tour Plan">
                 </a>
 
                 <div class="footer-categories footer__list-content">
@@ -411,15 +408,15 @@
 
                     <div class="footer-social">
                         <a class="facebook footer-social__link" href="https://www.facebook.com/" target="_blank" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="5000">
-                            <img class="footer-social__img" src="icons/facebook.svg" alt="Facebook icon">
+                            <img class="footer-social__img lazyload" src="#" data-src="icons/facebook.svg" alt="Facebook icon">
                         </a>
 
                         <a class="youtube footer-social__link" href="https://www.youtube.com/" target="_blank" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="5000">
-                            <img class="footer-social__img" src="icons/youtube.svg" alt="Youtube icon">
+                            <img class="footer-social__img lazyload" src="#" data-src="icons/youtube.svg" alt="Youtube icon">
                         </a>
 
                         <a class="instagram footer-social__link" href="https://www.instagram.com/" target="_blank" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="5000">
-                            <img class="footer-social__img" src="icons/instagram.svg" alt="Instagram icon">
+                            <img class="footer-social__img lazyload" src="#" data-src="icons/instagram.svg" alt="Instagram icon">
                         </a>
                     </div>
                 </div>
@@ -458,14 +455,14 @@
                     <ul class="footer-contact__list">
                         <li class="footer-contact__item footer-contact__item_mb-2">
                             <div class="footer-contact__img-wrapper">
-                                <img class="footer-contact__img" src="icons/map-marker.svg" alt="Map-marker icon" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-duration="6000">
+                                <img class="footer-contact__img lazyload" src="#" data-src="icons/map-marker.svg" alt="Map-marker icon" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-duration="6000">
                             </div>
                             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                         </li>
 
                         <li class="footer-contact__item footer-contact__item_mb-2">
                             <div class="footer-contact__img-wrapper">
-                                <img class="footer-contact__img" src="icons/contact-phone.svg" alt="Contact-phone icon" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-duration="5000">
+                                <img class="footer-contact__img lazyload" src="#" data-src="icons/contact-phone.svg" alt="Contact-phone icon" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-duration="5000">
                             </div>
 
                             <p class="footer-contact__address">
@@ -477,7 +474,7 @@
 
                         <li class="footer-contact__item footer-contact__item_mb-2">
                             <div class="footer-contact__img-wrapper">
-                                <img class="footer-contact__img" src="icons/email.svg" alt="Email icon" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-duration="4000">
+                                <img class="footer-contact__img lazyload" src="#" data-src="icons/email.svg" alt="Email icon" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-duration="4000">
                             </div>
                             <a class="footer-contact__address-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                         </li>
@@ -494,12 +491,12 @@
                         </div>
 
                         <div class="footer-form__input-group">
-                            <input class="footer-form__input js-phone" type="tel" name="phone" placeholder="Phone Number*" required>
+                            <input class="footer-form__input js-phone" type="tel" name="phone" placeholder="Phone Number*" minlength="18" required>
                         </div>
 
                         <textarea class="footer-form__textarea" name="message" placeholder="Message"></textarea>
 
-                        <button class="footer-form__btn" type="submit">Send</button>
+                        <button class="footer-form__btn" type="submit_2">Send</button>
 
                         <span class="footer-form__info">* Required Fields</span>
                     </form>
@@ -513,23 +510,23 @@
 
                 <div class="footer-payment footer__payment">
                     <a class="footer-payment__link" href="https://www.americanexpress.com/" target="_blank">
-                        <img class="footer-payment__img" src="images/card-1.png" alt="American Express icon">
+                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-1.png" alt="American Express icon">
                     </a>
 
                     <a class="footer-payment__link" href="https://www.apple.com/apple-pay/" target="_blank">
-                        <img class="footer-payment__img" src="images/card-2.png" alt="Apple Pay icon">
+                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-2.png" alt="Apple Pay icon">
                     </a>
 
                     <a class="footer-payment__link" href="https://pay.amazon.com/" target="_blank">
-                        <img class="footer-payment__img" src="images/card-3.png" alt="Amazon Pay icon">
+                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-3.png" alt="Amazon Pay icon">
                     </a>
 
                     <a class="footer-payment__link" href="https://www.paypal.com/" target="_blank">
-                        <img class="footer-payment__img" src="images/card-4.png" alt="PayPal icon">
+                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-4.png" alt="PayPal icon">
                     </a>
 
                     <a class="footer-payment__link" href="https://www.mastercard.us/" target="_blank">
-                        <img class="footer-payment__img" src="images/card-5.png" alt="Master Card icon">
+                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-5.png" alt="Master Card icon">
                     </a>
                 </div>
             </div>
@@ -549,12 +546,12 @@
 
             <form class="modal-form js-form" action="send.php" method="POST">
                 <input class="modal-form__input" type="text" name="name" placeholder="Your Full Name*" required>
-                <input class="modal-form__input js-phone" type="tel" name="phone" placeholder="Phone Number*" required>
+                <input class="modal-form__input js-phone" type="tel" name="phone" placeholder="Phone Number*" minlength="18" required>
                 <input class="modal-form__input" type="email" name="email" placeholder="Email*" required>
 
                 <textarea class="modal-form__textarea" name="message" placeholder="Message"></textarea>
 
-                <button class="modal-form__btn" type="submit">Send</button>
+                <button class="modal-form__btn" type="submit_2">Send</button>
 
                 <span class="modal-form__info">* Required Fields</span>
             </form>
@@ -567,6 +564,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/lazysizes.min.js" async></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js "></script>
 </body>

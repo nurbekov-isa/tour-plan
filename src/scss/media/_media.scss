@@ -12,10 +12,8 @@
         height: 225px;
     }
     .footer {
-        &-form {
-            &__input-group {
-                width: 100%;
-            }
+        &-wrapper {
+            column-gap: 30px;
         }
     }
 }
@@ -131,14 +129,15 @@
             margin-left: 0;
         }
         &-form {
-            &__input-group {
-                width: 255px;
+            &-wrapper {
+                grid-area: footer-form-wrapper;
+                max-width: 539px;
             }
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container {
         max-width: 576px;
         width: 95%;
@@ -171,6 +170,10 @@
     .user {
         margin-bottom: 27px;
         &__name {
+            &:hover {
+                text-decoration: none;
+                color: $secondary-color;
+            }
             &_light {
                 margin: 10px 0 0 0;
                 color: $secondary-color;
@@ -182,6 +185,9 @@
     .search {
         width: 245px;
         margin-bottom: 40px;
+        &__button:hover {
+            background-color: $color-accent;
+        }
     }
     .nav {
         position: fixed;
@@ -206,6 +212,10 @@
         }
         &__item:nth-child(n+2) {
             margin-bottom: 20px;
+        }
+        &__link:hover {
+            text-decoration: none;
+            color: $secondary-color;
         }
     }
     .burger {
@@ -258,9 +268,18 @@
         flex-basis: auto;
     }
     .booking {
+        &-contact {
+            &__number:hover {
+                text-decoration: none;
+                color: $secondary-color;
+            }
+        }
         width: 100%;
+        &__btn:hover {
+            background-color: $color-accent;
+        }
     }
-    .map {
+    .map-wrap {
         width: 100%;
     }
     .newsletter {
@@ -273,6 +292,11 @@
         &-title {
             flex: 0;
             margin-bottom: 37px;
+        }
+    }
+    .subscribe {
+        &__button:hover {
+            background-color: $color-accent;
         }
     }
     .reviews {
@@ -314,6 +338,9 @@
     }
     .card {
         width: 48.7%;
+        &__btn:hover {
+            background-color: $color-accent;
+        }
     }
     .footer {
         &-wrapper {
@@ -344,27 +371,76 @@
                 display: inline-block;
                 margin-right: 10px;
             }
+            &__link:hover {
+                background-color: transparent;
+            }
+        }
+        &-list {
+            &__link:hover {
+                text-decoration: none;
+                color: inherit;
+            }
         }
         &-contact__desc {
             line-height: 23px;
         }
+        &-contact__address-link {
+            &:hover {
+                text-shadow: none;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
         &-form {
             position: relative;
             &__input-group {
-                width: 100%;
+                flex-basis: 100%;
             }
-            &__textarea {
-                margin-bottom: 65px;
-            }
+            // &__textarea {
+            //     margin-bottom: 78px;
+            // }
             &__info {
                 position: absolute;
                 left: 0;
-                top: 284px;
+                top: 308px;
+            }
+            &__btn {
+                margin-top: 75px;
+                &:hover {
+                    background-color: $color-accent;
+                }
+            }
+        }
+        &-policy {
+            &__link:hover {
+                text-decoration: none;
+                color: $secondary-color;
             }
         }
         &-payment {
             margin: 0 auto 0 0;
         }
+    }
+    .modal {
+        &__close:hover {
+            background-color: transparent;
+        }
+        &-form {
+            &__btn:hover {
+                background-color: $color-accent;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) and (max-width:767px) {
+    .nav {
+        height: 247px;
+        overflow-y: scroll;
+    }
+    .modal__dialog {
+        height: 300px;
+        overflow-y: scroll;
     }
 }
 

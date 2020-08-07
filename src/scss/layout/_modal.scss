@@ -71,6 +71,10 @@
         &__btn {
             @include btn-reset;
             @include footer-btn;
+            transition: background-color .4s ease-in-out;
+            &:hover {
+                @include hover-color;
+            }
         }
         &__info {
             margin-left: auto;
