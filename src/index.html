@@ -28,7 +28,13 @@
                 </form>
 
                 <a class="user header__user user_mobile_hidden" href="#" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <img class="user__avatar lazyload" src="#" data-src="images/user-avatar.jpg" alt="Nathan avatar">
+
+                    <picture>
+                        <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/user-avatar.webp">
+                        <source type="image/jpeg" srcset="images/user-avatar.jpg">
+                        <img class="user__avatar lazyload" src="#" data-src="images/user-avatar.jpg" alt="Nathan avatar">
+                    </picture>
+
                     <span class="user__name">Nathan</span>
                 </a>
 
@@ -146,27 +152,11 @@
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide.jpg" alt="slide">
-                            </div>
-
-                            <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-2.jpg" alt="slide">
-                            </div>
-
-                            <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-3.jpg" alt="slide">
-                            </div>
-
-                            <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-4.jpg" alt="slide">
-                            </div>
-
-                            <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-5.jpg" alt="slide">
-                            </div>
-
-                            <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img lazyload" src="#" data-src="images/slide-6.jpg" alt="slide">
+                                <picture>
+                                    <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/slide.webp">
+                                    <source type="image/jpeg" srcset="images/slide.jpg">
+                                    <img class="swiper-slide__img lazyload" src="#" data-src="images/slide.jpg" alt="slide">
+                                </picture>
                             </div>
                         </div>
 
@@ -225,7 +215,7 @@
 
                 <form class="subscribe subscribe__search js-form" action="send.php" method="POST">
                     <input class="subscribe__input" type="email" name="email" placeholder="Your email address" required>
-                    <button class="subscribe__button" type="submit_1" aria-label="send">Send</button>
+                    <button class="subscribe__button" name="submit_1" type="submit" aria-label="send">Send</button>
                 </form>
             </div>
         </section>
@@ -240,7 +230,12 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar lazyload" src="#" data-src="images/reviews-avatar.jpg" alt="Photo Megan Fox">
+                                    <picture>
+                                        <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/reviews-avatar.webp">
+                                        <source type="image/jpeg" srcset="images/reviews-avatar.jpg">
+                                        <img class="reviews-slider__avatar lazyload" src="#" data-src="images/reviews-avatar.jpg" alt="Photo Megan Fox">
+                                    </picture>
+
                                     <h3 class="reviews-slider__username">Megan Fox</h3>
 
                                     <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
@@ -268,7 +263,12 @@
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
                                 <div class="reviews-slider__profile">
-                                    <img class="reviews-slider__avatar lazyload" src="#" data-src="images/reviews-avatar-2.jpg" alt="Photo Megan Fox">
+                                    <picture>
+                                        <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/reviews-avatar-2.webp">
+                                        <source type="image/jpeg" srcset="images/reviews-avatar-2.jpg">
+                                        <img class="reviews-slider__avatar lazyload" src="#" data-src="images/reviews-avatar-2.jpg" alt="Photo Robert Deniro">
+                                    </picture>
+
                                     <h3 class="reviews-slider__username">Robert De Niro</h3>
 
                                     <span class="reviews-slider__date">Stayed 11 May, 2017</span>
@@ -309,25 +309,46 @@
 
                 <ul class="activities-list">
                     <li class="card activities-list__item" data-aos="flip-down" data-aos-easing="ease-in-sine">
-                        <img class="card__img lazyload" src="#" data-src="images/activity-1.jpg" alt="The curious corner of chamarel">
+
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/activity-1.webp">
+                            <source type="image/jpeg" srcset="images/activity-1.jpg">
+                            <img class="card__img lazyload" src="#" data-src="images/activity-1.jpg" alt="The curious corner of chamarel">
+                        </picture>
+
                         <h3 class=" card__title">The curious corner of chamarel</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
 
                     <li class="card activities-list__item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <img class="card__img lazyload" src="#" data-src="images/activity-2.jpg " alt="Gymkhana club golf course ">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/activity-2.webp">
+                            <source type="image/jpeg" srcset="images/activity-2.jpg">
+                            <img class="card__img lazyload" src="#" data-src="images/activity-2.jpg" alt="Gymkhana club golf course">
+                        </picture>
+
                         <h3 class="card__title">Gymkhana club golf course</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
 
                     <li class="card activities-list__item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <img class="card__img lazyload" src="#" data-src="images/activity-3.jpg " alt="Tamarind falls hiking trip - full day ">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/activity-3.webp">
+                            <source type="image/jpeg" srcset="images/activity-3.jpg">
+                            <img class="card__img lazyload" src="#" data-src="images/activity-3.jpg" alt="Tamarind falls hiking trip - full day">
+                        </picture>
+
                         <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
 
                     <li class="card activities-list__item" data-aos="flip-down" data-aos-easing="ease-in-sine">
-                        <img class="card__img lazyload" src="#" data-src="images/activity-4.jpg " alt="The blue marine discovery quest ">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/activity-4.webp">
+                            <source type="image/jpeg" srcset="images/activity-4.jpg">
+                            <img class="card__img lazyload" src="#" data-src="images/activity-4.jpg" alt="The blue marine discovery quest">
+                        </picture>
+
                         <h3 class="card__title">The blue marine discovery quest</h3>
                         <button class="card__btn">Book Now</button>
                     </li>
@@ -496,7 +517,7 @@
 
                         <textarea class="footer-form__textarea" name="message" placeholder="Message"></textarea>
 
-                        <button class="footer-form__btn" type="submit_2">Send</button>
+                        <button class="footer-form__btn" name="submit_2" type="submit">Send</button>
 
                         <span class="footer-form__info">* Required Fields</span>
                     </form>
@@ -510,23 +531,43 @@
 
                 <div class="footer-payment footer__payment">
                     <a class="footer-payment__link" href="https://www.americanexpress.com/" target="_blank">
-                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-1.png" alt="American Express icon">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/card-1.webp">
+                            <source type="image/jpeg" srcset="images/card-1.jpg">
+                            <img class="footer-payment__img lazyload" src="#" data-src="images/card-1.png" alt="American Express icon">
+                        </picture>
                     </a>
 
                     <a class="footer-payment__link" href="https://www.apple.com/apple-pay/" target="_blank">
-                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-2.png" alt="Apple Pay icon">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/card-2.webp">
+                            <source type="image/jpeg" srcset="images/card-2.jpg">
+                            <img class="footer-payment__img lazyload" src="#" data-src="images/card-2.png" alt="Apple Pay icon">
+                        </picture>
                     </a>
 
                     <a class="footer-payment__link" href="https://pay.amazon.com/" target="_blank">
-                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-3.png" alt="Amazon Pay icon">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/card-3.webp">
+                            <source type="image/jpeg" srcset="images/card-3.jpg">
+                            <img class="footer-payment__img lazyload" src="#" data-src="images/card-3.png" alt="Amazon Pay icon">
+                        </picture>
                     </a>
 
                     <a class="footer-payment__link" href="https://www.paypal.com/" target="_blank">
-                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-4.png" alt="PayPal icon">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/card-4.webp">
+                            <source type="image/jpeg" srcset="images/card-4.jpg">
+                            <img class="footer-payment__img lazyload" src="#" data-src="images/card-4.png" alt="PayPal icon">
+                        </picture>
                     </a>
 
                     <a class="footer-payment__link" href="https://www.mastercard.us/" target="_blank">
-                        <img class="footer-payment__img lazyload" src="#" data-src="images/card-5.png" alt="Master Card icon">
+                        <picture>
+                            <source type="image/webp" srcset="#" class="lazyload" data-srcset="images/card-5.webp">
+                            <source type="image/jpeg" srcset="images/card-5.jpg">
+                            <img class="footer-payment__img lazyload" src="#" data-src="images/card-5.png" alt="Master Card icon">
+                        </picture>
                     </a>
                 </div>
             </div>
@@ -551,7 +592,7 @@
 
                 <textarea class="modal-form__textarea" name="message" placeholder="Message"></textarea>
 
-                <button class="modal-form__btn" type="submit_2">Send</button>
+                <button class="modal-form__btn" name="submit_2" type="submit">Send</button>
 
                 <span class="modal-form__info">* Required Fields</span>
             </form>
@@ -559,13 +600,13 @@
         <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/lazysizes.min.js" async></script>
     <script src="js/aos.js"></script>
+    <script src="js/modernizr-custom.js"></script>
     <script src="js/main.js "></script>
 </body>
 

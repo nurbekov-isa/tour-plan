@@ -216,7 +216,19 @@
         overflow: hidden;
         height: 213px;
         width: 347px;
-        background: url("../images/google-map.png");
+        // background: url("../images/google-map.jpg");
         border-radius: 10px;
+    }
+}
+
+.no-webp {
+    .map-wrap {
+        background: url("../images/google-map.jpg");
+    }
+}
+
+.webp {
+    .map-wrap {
+        background: url("../images/google-map.webp");
     }
 }

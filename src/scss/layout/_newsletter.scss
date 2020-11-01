@@ -2,7 +2,6 @@
     position: relative;
     min-height: 260px;
     padding: 98px 0 87px;
-    background: $color-dark url("../images/newsletter-bg.jpg")center center/cover no-repeat;
     &::before {
         content: "";
         position: absolute;
@@ -71,5 +70,17 @@
         &:hover {
             @include hover-color;
         }
+    }
+}
+
+.no-webp {
+    .newsletter {
+        background: url("../images/newsletter-bg.jpg") center center/cover no-repeat;
+    }
+}
+
+.webp {
+    .newsletter {
+        background: url("../images/newsletter-bg.webp") center center/cover no-repeat;
     }
 }
